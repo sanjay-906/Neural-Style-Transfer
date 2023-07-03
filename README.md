@@ -61,6 +61,7 @@ VGG19 pretrained model is used (with freezed weights) and the whole training pro
 
 ### CONTENT LOSS:<br>
 content loss is captured by the mean squared error of the generated image and content image(they are the outputs from the 5 convolution layers)
+
 <br>
 
 ### STYLE LOSS:<br>
@@ -68,8 +69,14 @@ style of an image is captured using gram matrix.. it is the dot product of the f
 
 <br>
 
-### RESULTS:<br>
+### VGG-19 MODEL:<br>
+![arch](https://raw.githubusercontent.com/sanjay-906/Neural-Style-Transfer/main/pictures/VGG19-pre-trained-CNN-model.png)
 
+the output of the 5 convolution layers are used for calculating style loss (0, 5, 10, 19, 28)
+
+<br>
+
+### RESULTS:<br>
 224x224 image size; After training for 10,000 epochs
 
 ![results](https://raw.githubusercontent.com/sanjay-906/Neural-Style-Transfer/main/pictures/results.jpg)
